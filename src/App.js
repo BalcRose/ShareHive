@@ -1,8 +1,9 @@
+
 import React from 'react';
 import Navbar from './components/Navbar';
 import './App.css';
 import Home from './components/pages/Home';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 import Services from './components/pages/Services';
 import Products from './components/pages/Products';
 import Login from './components/pages/Login';
@@ -30,20 +31,17 @@ google.accounts.id.initialize ({
     <>
       <Router>
         <Navbar />
-        <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/services' component={Services} />
-          <Route path='/products' component={Products} />
-          <Route path='/sign-up' component={Login} />
-          <Route path='/create' component={Create}></Route>
-          <Route path='/about' component={About}></Route>
-          <Route path= '/Chat' component = {Chat} /> 
-          <Route path= '/contact-us' component = {ContactUs} />
-          
-        </Switch>
+          <Routes>
+            <Route path="/" element={<Home />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/products" element={<Products />} />
+              <Route path="/sign-up" element={<Login />} />
+              <Route path="/create" element={<Create />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/Chat" element={<Chat />} />
+              <Route path="/contact-us" element={<ContactUs />} />
+          </Routes>      
       </Router>
     </>
   );
 }
-
-export default App;
