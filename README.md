@@ -15,16 +15,16 @@ backgrounds.
 
 Steps to follow inorder to run the application:
 ------------------------------------------------
-To create a new app: 
+**To create a new app:** 
 npx create-react-app my-app
 
-Once the installation is done, you can open your project folder: 
+**Once the installation is done, you can open your project folder: **
 cd my-app
 
-Incase of missing any dependencies kindly install the appropriate versions of react-router-dom and web-vitals: 
+**Incase of missing any dependencies kindly install the appropriate versions of react-router-dom and web-vitals: **
 npm install react-router-dom
 npm install web-vitals
 
-Use the folowing command to run the program: 
+**Use the folowing command to run the program: **
 npm start
 
