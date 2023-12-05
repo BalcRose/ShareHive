@@ -24,6 +24,8 @@ cd my-app
 **Incase of missing any dependencies kindly install the appropriate versions of react-router-dom and web-vitals:**
 npm install react-router-dom
 npm install web-vitals
+npm install cors
+npm install axios
 
 **Use the folowing command to run the program:**
 npm start
